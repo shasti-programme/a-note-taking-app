@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Nobile:ital,wght@1,500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(315deg, #0cbaba, #380036);
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  font-family: "Nobile", sans-serif;
+}
+
+.buton-clear {
+  background-color: #81b29a;
+  outline: none;
+  border: none;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 50px;
+  padding-right: 50px;
+  border-radius: 12px;
+  color: whitesmoke;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+
+.buton-clear:hover {
+  background-color: #497c63;
+}
+
+.fotter-content {
+  color: whitesmoke;
+  font-size: 19px;
+}
+
+.wrapper header {
+  margin-top: 20px;
+  font-size: 30px;
+  color: whitesmoke;
+  font-weight: 600;
+  letter-spacing: 12px;
+}
+
+.inputField input {
+  padding: 12px;
+  outline: none;
+  border: none;
+  font-size: 15px;
+  width: 30%;
+  margin-top: 20px;
+  border-radius: 5px;
+  cursor: text;
+  transition: all 0.4s ease-in-out;
+  margin-top: 20px;
+}
+
+.inputField input:hover {
+  background-color: #b7e4c7;
+}
+
+.button-add {
+  padding: 12px;
+  font-size: 16px;
+  width: 60px;
+  border-radius: 12px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+  background-color: whitesmoke;
+  color: #497c63;
+}
+
+.button-add:hover {
+  background-color: #81b29a;
+  color: whitesmoke;
+}
+
+.wrapper .todoList {
+  max-height: 250px;
+  overflow-y: auto;
+}
+
+.todoList li {
+  position: relative;
+  list-style: none;
+  height: 45px;
+  line-height: 45px;
+  margin-bottom: 8px;
+  background: #f2f2f2;
+  border-radius: 3px;
+  padding: 0 15px;
+  cursor: default;
+  overflow: hidden;
+  width: 40%;
+}
+
+.todoList li .icon {
+  position: absolute;
+  right: -45px;
+  background: #e74c3c;
+  width: 45px;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 3px 3px 0;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.todoList li:hover .icon {
+  right: 0px;
+}
+
+.footer button.active {
+  opacity: 1;
+  pointer-events: auto;
+}

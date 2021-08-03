@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./style.css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <title>Make a Note</title>
+  </head>
+  <body>
+    <center>
+      <div class="wrapper">
+        <header>Make a Note</header>
+        <div class="inputField">
+          <input type="text" placeholder="Make a Note Here" />
+          <button class="button-add"><i class="fas fa-plus"></i></button>
+        </div>
+        <br />
+        <ul class="todoList">
+          <!-- data are comes from local storage -->
+        </ul>
+        <div class="footer_big_container">
+          <div class="footer">
+            <span class="fotter-content"
+              >Totally You have <span class="pendingTasks"></span> tasks to be
+              Compleeted</span
+            ><br /><br />
+            <button class="buton-clear">Clear All</button>
+          </div>
+        </div>
+      </div>
+    </center>
+    <!--script linking-->
+
+    <script src="./app.js"></script>
+  </body>
+</html>
